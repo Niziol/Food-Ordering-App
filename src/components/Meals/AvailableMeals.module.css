@@ -11,6 +11,23 @@
   list-style: none;
 }
 
+.meals button {
+  padding: 0.25rem 2rem;
+  font: inherit;
+  font-weight: bold;
+  color: white;
+  background-color: #8a2b06;
+  border: 1px solid #8a2b06;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.meals button:hover,
+.meals button:active {
+  background-color: #641e03;
+  border-color: #641e03;
+}
+
 @keyframes meals-appear {
   from {
     opacity: 0;
