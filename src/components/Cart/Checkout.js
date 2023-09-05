@@ -76,7 +76,13 @@ const Checkout = (props) => {
 			return;
 		}
 
-		// Submit cart dataw
+		props.onConfirm({
+			name: enteredName,
+			email: enteredEmail,
+			street: enteredStreet,
+			postalCode: enteredPostalCode,
+			city: enteredCity,
+		});
 
 		nameInputReset();
 		emailInputReset();
